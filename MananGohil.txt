@@ -1,0 +1,17 @@
+9/08/2026
+Mission Overview:
+Cansat = payload + container ⇒ mount on top of the rocket.
+
+payload ⇒ inside the container. Nose cone is part of the payload.
+
+Triggers:
+At peak altitude ⇒ Container separates from the rocket ( by means of rocket ejection motor.)
+		Container shall descent at a rate of <= 20m/s by means of a parachute.
+at 75% of peak altitude ⇒ Payload separates from the container. Payload starts descending with rate = 5m/s. Auto-gyro is used to stabilize the cansat.
+
+(2 video cameras show the separation of the payload from the container (i.e at 75% peak altitude) ⇒ auto-gyro functioning is also monitored by this camera so most preferably it is on the inside of the payload.
+Second video camera to be oriented at an angle of 45deg (towards north) and it needs to be spin stabilized.)
+
+Data is collected and transmitted at 1Hz (sampling rate can be much higher. but GCS should display at 1Hz only)
+
+Telemetry to be considered : Interior Temp, battery voltage, altitude, auto-gyro rotation rate, accelaration rate, magnetic field and GPS Position.
