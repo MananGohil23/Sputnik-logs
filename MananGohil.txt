@@ -15,3 +15,17 @@ Second video camera to be oriented at an angle of 45deg (towards north) and it n
 Data is collected and transmitted at 1Hz (sampling rate can be much higher. but GCS should display at 1Hz only)
 
 Telemetry to be considered : Interior Temp, battery voltage, altitude, auto-gyro rotation rate, accelaration rate, magnetic field and GPS Position.
+
+11/10/26
+Basic FSW logic:
+	Most calculation to be done on the basis of altitude.
+	Fallback conditions to be specified for every flight software state transition.
+	Communications in terms of reading values from the sensors to be done using the XBEE module (more research to be done).
+	The sampling rate of the sensors can be high but the transmition rate to be fixed at 1hz.
+
+GCS Requirements:
+	It should have minimum 2hrs of battery backup.
+	Graphs of all important telemetry to be displayed.
+	GPS map to be displayed to track the Cansat after landing.
+	Dedicated command line OR Buttons to send commands to the Cansat.
+	A button to display CSV file of the Data collected.
